@@ -10,8 +10,8 @@ if (window.moment) {
     deps.push('moment');
 }
 
-define('pikaday', deps,
-function()
+define(deps,
+function(moment)
 {
     'use strict';
 
