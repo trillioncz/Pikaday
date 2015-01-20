@@ -4,7 +4,13 @@
  * Copyright © 2014 David Bushell | BSD & MIT license | https://github.com/dbushell/Pikaday
  */
 
-define(
+var deps = [];
+
+if (window.moment) {
+    deps.push('moment');
+}
+
+define('pikaday', deps,
 function()
 {
     'use strict';
