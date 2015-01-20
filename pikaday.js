@@ -4,7 +4,7 @@
  * Copyright © 2014 David Bushell | BSD & MIT license | https://github.com/dbushell/Pikaday
  */
 
-define(window.moment ? ['moment'] : [],
+define(
 function(moment)
 {
     'use strict';
