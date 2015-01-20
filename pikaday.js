@@ -9,7 +9,7 @@
 {
     'use strict';
 
-    define(function (req) {
+    define(function () {
         return factory(window.moment);
     });
 }(this, function (moment)
