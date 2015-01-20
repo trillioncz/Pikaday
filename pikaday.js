@@ -5,14 +5,8 @@
  */
 
 
-(function (root, factory)
-{
-    'use strict';
-
-    define(function () {
-        return factory(window.moment);
-    });
-}(this, function (moment)
+define(
+function ()
 {
     'use strict';
 
@@ -998,4 +992,4 @@
     };
 
     return Pikaday;
-}));
+});
