@@ -9,24 +9,12 @@
 {
     'use strict';
 
-    var moment;
-    if (typeof exports === 'object') {
-        // CommonJS module
+    define(function (req) {
         // Load moment.js as an optional dependency
-        try { moment = require('moment'); } catch (e) {}
-        module.exports = factory(moment);
-    } else if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define(function (req)
-        {
-            // Load moment.js as an optional dependency
-            var id = 'moment';
-            try { moment = req(id); } catch (e) {}
-            return factory(moment);
-        });
-    } else {
-        root.Pikaday = factory(root.moment);
-    }
+        var id = 'moment';
+        try { moment = req(id); } catch (e) {}
+        return factory(moment);
+    });
 }(this, function (moment)
 {
     'use strict';
